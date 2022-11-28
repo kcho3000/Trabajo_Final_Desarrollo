@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Usuario</title>
+    <link rel="stylesheet" href="css/Estilos.css">
+</head>
+<body>
+    <div class="register-box">
+        <img class="logos" src="Imagenes/logo_escuelitaa.png" alt="Logo de escuelita">
+        <h1>Crear Usuario</h1>
+        <form action="crearUsuario/" method="GET" >
+            <!--Nombre y Apellido del Usuario E33-->
+            <label for="MoA">Eres Maestro o Alumno?:</label>
+            <select name="MoA" id="MoA">
+            <option value="Maestro">Maestro</option>
+            <option value="Alumno">Alumno</option>
+            <label for="name">Nombre</label>
+            <input type="text" placeholder="Nombre" name="nombre"> 
+            <label for="apellidoP">Apellido Paterno</label>
+            <input type="text" placeholder="Apellido Paterno" name="apellidoP">
+            <label for="apellidoM">Apellido Materno</label>
+            <input type="text" placeholder="Apellido Materno" name="apellidoM">
+            <!--Correo del Usuario E33-->
+            <label for="email">Correo</label>
+            <input type="text" placeholder="Correo" name="correo">
+            <!--Contraseña del Usuario-->
+            <label for="password">Introduzca una Contraseña</label>
+            <input type="text" placeholder="Contraseña" name="contraseña"> 
+            <label for="password">Repita la Contraseña</label>
+            <input type="text" placeholder="Contraseña" name="contraseñar"> 
+            <!--Boton para enviar datos-->
+            <input  type="submit" value="Crear Usuario"> 
+
+
+        </form>
+    </div>
+</body>
+</html>
