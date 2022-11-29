@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <title>Index</title>
     <link rel="stylesheet" href="css/IndexEstilos.css">
 </head>
@@ -11,26 +15,35 @@
     <!--Seccion Principal de la Pagina Index-->
     <div id="primer-seccion">
         <div id="navegacion">
-            <p id="logo">Colegio <span class="span">Edor 33 HighSchool Musical</span>
+            <p id="logo">Colegio <span class="span">HighSchool Musical</span>
             <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Contactos</a>
-                <a href="#">Iniciar Sesion</a> 
+
+                
             </nav>
         </div>
         <div id="primera-seccion-contenido">
             <p>Educacion de Calidad</p>
             <hr>
             <h1>Educacion en valores y desarrollo empresarial</h1>
-            <input class="btn-verde" type="submit" value="más informacion">
+            
         </div>
+        <div id="primera-seccion-contenido">
+            <p>Inicia sesión</p>
+
+            
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="text-center">
+            <button class="btn btn-default">
+                <img src="Imagenes/login.png" width="100" /> 
+           </button>
+            
+        </div>
+        
     </div>
      <!--Segunda Seccion-->
-        <div id="segunda-seccion">
-            <p class="frase">Un colegio con los mejores estandares de Mexico</p>
-            <p class="frase">Eder Elizalde Castro, Diego Francisco Cacho Dueñas</p>
-            <hr>
-        </div>
      <!--Tercera Seccion-->
         <div id="tercera-seccion">
             <div id="titulo">
@@ -42,18 +55,18 @@
                     <img src="Imagenes/1.png" alt="">
                     <h6> Simposio Empresarial</h6>
                     <p>Un evento en donde los estudiantes muestran sus conocimientos adquiridos durante el curso</p>
-                    <input class="btn-verde" type="submit" value="más informacion">
+                    
                 </div>
                 <div class="img-3ra">
                     <img src="Imagenes/2.png" alt="">
                     <h6> English Day</h6>
                     <p>Un dia completamente dedicado a mejorar la comprension y el habla del idioma ingles</p>
-                    <input class="btn-verde" type="submit" value="más informacion">
+                    
                 </div>
             </div>
         </div>
     <!--Cuarta Seccion-->
-    <div id="cuarta-seccion">
+    <div id="cuarta-seccion" class="text-center">
         <div id="container">
             <div id="cuarta-seccion-izq" class="mitad"></div>
             <div id="cuarta-seccion-der" class="mitad">
@@ -61,29 +74,59 @@
                 <hr>
                 <p>Con unas instalaciones en las que se combina la modernidad en nuestra hermosa sede B y lo clasico considerado
                 patrimonio cultural en la sede A</p>
-                <input class="btn-verde" type="submit" value="más informacion">
+                
             </div>
         </div>
     </div>
     <!--Quinta seccion-->
-    <div id="quinta-seccion">
+    <div id="quinta-seccion" class="text-center">
         <div id="quinta-seccion-izq">
             <h3>Egresados Edorcistas</h3>
             <hr>
             <p>Un alto porcentaje de nuestros egresados estudian en las mejores universidades al rededor de av universidad</p>
-            <input class="btn-verde" type="submit" value="más informacion">
+           
         </div>
-        <div id="quinta-seccion-der">
-            <img src="Imagenes/3.jpg" alt="">
-            <img src="Imagenes/4.png" alt="">
-            <img src="Imagenes/5.jpg" alt="">
-            <img src="Imagenes/6.jpg" alt="">
-        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="Imagenes/3.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Imagenes/4.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Imagenes/5.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Imagenes/6.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
     </div>
+    
+    <div id="segunda-seccion">
+            <p class="frase">Un colegio con los mejores estandares de Mexico</p>
+            <p class="frase">Eder Elizalde Castro, Diego Francisco Cacho Dueñas</p>
+            <p class="frase">Leon-GTO email:eec68899@udelasalle.edu.mx creador:Eder Elizalde Castro</p>
+        <p class="frase">CopyRight 2022 EDOR33 </p>
+            <hr>
+        </div>
     <!--Footer-->
-    <footer>
-        <p>Leon-GTO email:eec68899@udelasalle.edu.mx creador:Eder Elizalde Castro</p>
-        <p>CopyRight 2022 EDOR33 </p>
-    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

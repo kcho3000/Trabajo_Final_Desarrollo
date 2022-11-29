@@ -8,7 +8,7 @@
 }
 .btn-verde{
     text-decoration: none;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 0.8rem;
     font-family: 'monstaserrat', sans-serif;
     text-transform: uppercase;
@@ -27,10 +27,10 @@
 }
 
 #primer-seccion{
-    background: url(../Imagenes/Fondo_escuelita.png) no-repeat center top;
+    background: url(../Imagenes/Fondo_escuelita.jpg) no-repeat center top;
     background-size: cover;
     height: 100vh;
-    color: #fff;    
+    color: rgb(0, 0, 0);    
 }
 
 #navegacion{
@@ -128,8 +128,11 @@ nav>a:hover{
 
 #container-3ra-seccion{
     text-align: center;
-    display: flex;
-    flex-direction: row;
+
+    height: auto;
+
+
+    
 }
 
 #img-3ra{
@@ -138,11 +141,8 @@ nav>a:hover{
 }
 
 #img-3ra > h6{
-    text-align: center;
-    font-family:'monstaserrat', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    height: auto;
+    max-width: 100%;
 }
 
 #img-3ra > p{
