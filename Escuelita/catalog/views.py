@@ -2,6 +2,7 @@ from django.shortcuts import render,HttpResponse, redirect
 from catalog.models import Alumnos 
 from catalog.models import Maestro 
 from catalog.models import Carrera
+from catalog.models import Horario
 
 
 # Create your views here.
@@ -21,6 +22,7 @@ def register(request):
 
 def crearUsuario(request):
     constrasena = ""
+
     if(request.GET["contraseña"] == request.GET["contraseñar"]):
         constrasena = request.GET["contraseña"]
     Alumno = Alumnos(
@@ -49,9 +51,10 @@ def crearUsuario(request):
     NombreUsuario = {
             'Nombre' : request.GET["nombre"],
             'ApellidoP' : request.GET["apellidoP"],
-            'ApellidoM' : request.GET["apellidoM"]
-        } 
-    return render(request, Html, NombreUsuario)
+            'ApellidoM' : request.GET["apellidoM"],
+        }
+        
+    return render(request, Html, NombreUsuario ) 
 
 def mostrarMaterias(request):
     CarreraS = request.GET["CarreraS"]
@@ -63,6 +66,7 @@ def mostrarMaterias(request):
     CarreraCH = Carrera.objects.get(pk = id)
     Materias = [CarreraCH.Materia1,CarreraCH.Materia2,CarreraCH.Materia3,CarreraCH.Materia4,CarreraCH.Materia5]
     context = {
+
         'M1' : Materias[0],
         'M2' : Materias[1],
         'M3' : Materias[2],
@@ -71,3 +75,20 @@ def mostrarMaterias(request):
     }
     
     return render(request, 'EscogerMateria.html', context)
+
+def CrearHorarios(request):
+    HorarioU = Horario(
+    Nombre = "Eder",
+    ApellidoP = "Castro",
+    ApellidoM = "Elizalde",
+    Nombre_Carrera = "Derecho",
+    Materia1H = "Penal",
+    Materia2H = "Civil",
+    Materia3H = "Mercantil",
+    Materia4H = "Civil",
+    Materia5H = "Familiar"
+    )
+    HorarioU.save()
+
+
+    return render(request, 'MostrarHorario.html')

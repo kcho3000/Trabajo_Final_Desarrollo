@@ -25,5 +25,6 @@ urlpatterns = [
     path("login/", views.inicio_sesion, name="Login"),
     path("login/register/", views.register, name="Register"),
     path("login/register/crearUsuario/", views.crearUsuario, name="CrearUsuario"),
-    path("login/register/crearUsuario/elegircarrera/", views.mostrarMaterias, name="Mostar Materia")
+    path("login/register/crearUsuario/elegircarrera/", views.mostrarMaterias, name="Mostar Materia"),
+    path("login/register/crearUsuario/elegircarrera/GMaterias/", views.CrearHorarios, name="Mostar Materia")
 ]
